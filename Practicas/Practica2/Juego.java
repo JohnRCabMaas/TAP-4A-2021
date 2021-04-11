@@ -98,7 +98,7 @@ public class Juego extends JFrame {
     }
 
     public static void main(String[] args) {
-        Videojuego videojuego = new Videojuego();
+        Juego videojuego = new Juego();
         videojuego.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
