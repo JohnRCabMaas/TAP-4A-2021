@@ -90,7 +90,7 @@ public class Blog extends JFrame implements ActionListener {
                 // null, colores, colores[0]) + " ";
                 int c = Integer.parseInt(JOptionPane.showInputDialog(null,
                         "Elija su Color Segun El Numero\n" + "0 - Negro\n" + "1 - Azul\n" + "2 - Rojo\n" + "3 - Cyan(Cian)\n"
-                                + "4 - Gray(Gris)\n" + "5 - Green(Verde)\n" + "6 - Yellow(Amarillo)\n"));
+                                ));
                 cambiarColor(c);
             } catch (Exception exc) {
                 System.out.println(exc);
@@ -141,15 +141,6 @@ public class Blog extends JFrame implements ActionListener {
             break;
         case 3:
             txtBlocNotas.setForeground(Color.CYAN);
-            break;
-        case 4:
-            txtBlocNotas.setForeground(Color.GRAY);
-            break;
-        case 5:
-            txtBlocNotas.setForeground(Color.GREEN);
-            break;
-        case 6:
-            txtBlocNotas.setForeground(Color.YELLOW);
             break;
         default:
             txtBlocNotas.setForeground(Color.BLACK);
