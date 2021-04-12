@@ -19,7 +19,7 @@ public class Calculadora extends JFrame {
         txtResultado.setFont(new Font("Open Sans", 1, 18));
         txtResultado.setForeground(new Color(51, 51, 51));
         txtResultado.setText("0123456789");
-        txtResultado.setPreferredSize(new Dimension(430, 30));
+        txtResultado.setPreferredSize(new Dimension(500, 50));
         txtResultado.addKeyListener(new KeyAdapter() {
             public void keyTyped(KeyEvent evt){
                 txtResultadokeyTyped(evt);
