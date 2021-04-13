@@ -26,7 +26,7 @@ public class Calculadora extends JFrame {
             }
         });
 
-        btnC = new JButton("C");
+        btnC = new JButton("CE");
         btnC.setFocusable(false);
         btnC.setFont(new Font("Open Sans", 1, 16));
         btnC.addActionListener(evt -> btnCActionPerformed(evt));
