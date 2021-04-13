@@ -19,11 +19,11 @@ public class SpritePlayer extends Canvas {
         isClicked = false;
         
         images = new Image[4];
-        String pathImage = "imagenes/Ninja.jpg";
+        String pathImage = "imanen/.jpg";
         imagen = Toolkit.getDefaultToolkit().getImage(pathImage);
         this.t = 0;
         for(int i=1;i <= 4; i++) {
-            images[i-1] = Toolkit.getDefaultToolkit().getImage("imagenes/" + i + ".png");
+            images[i-1] = Toolkit.getDefaultToolkit().getImage("Imagenes/" + i + ".png");
         }
     }
 
