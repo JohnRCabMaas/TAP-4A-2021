@@ -2,13 +2,13 @@ package Practicas.Practica2;
 import java.awt.*;
 import javax.swing.*;
 
-public class Pintura {
+public class Paint{
     private int x, y;
     private int w, h;
     private String isFigura;
     boolean isClicked;
 
-    public Pintura() {
+    public Paint() {
         x = y = 50;
         w = h = 100;
     }
@@ -57,7 +57,7 @@ public class Pintura {
         this.y = y;
     }
 
-    public Pintura(LayoutManager layout) {
+    public Paint(LayoutManager layout) {
         super(layout);
     }
 
