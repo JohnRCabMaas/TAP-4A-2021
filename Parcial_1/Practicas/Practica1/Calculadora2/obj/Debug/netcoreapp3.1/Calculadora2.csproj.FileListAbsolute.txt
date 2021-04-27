@@ -1,0 +1,15 @@
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\bin\Debug\netcoreapp3.1\Calculadora2.exe
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\bin\Debug\netcoreapp3.1\Calculadora2.deps.json
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\bin\Debug\netcoreapp3.1\Calculadora2.runtimeconfig.json
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\bin\Debug\netcoreapp3.1\Calculadora2.runtimeconfig.dev.json
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\bin\Debug\netcoreapp3.1\Calculadora2.dll
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\bin\Debug\netcoreapp3.1\Calculadora2.pdb
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.Form1.resources
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.AssemblyInfo.cs
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.dll
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.pdb
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.genruntimeconfig.cache
+C:\Users\hp\source\repos\Calculadora2\Calculadora2\obj\Debug\netcoreapp3.1\Calculadora2.csprojAssemblyReference.cache
