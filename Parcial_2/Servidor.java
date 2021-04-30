@@ -43,6 +43,8 @@ public class Servidor {
     public static void main(String arg[]){
         try{
             Servidor s= new Servidor();
-        }catch()
+        }catch(Excetion ex){
+            ex.printStackTrace();
+        }
     }
 }
