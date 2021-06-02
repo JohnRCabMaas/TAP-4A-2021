@@ -1,3 +1,4 @@
+package Parcial_2.Json;
 public class Country {
     private String name_en;
     private String name_es;
