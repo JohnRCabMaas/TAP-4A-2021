@@ -1,49 +1,65 @@
 package Parcial_2;
-import java.net.ServerSocket;
+
 import java.io.IOException;
+import java.net.ServerSocket;
 import java.net.Socket;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.PrintWrite;
+import java.util.ArrayList;
 
 public class Servidor {
-    ServerSocket server:
-    BufferedReader in;
-    PrintWriter out;
-    public Servidor()throws IOException{
-        server= new ServerSocket(5000);
-        Socket cc = server.accept();
-        in = new BufferedReader(newInputStreamReader(cc.getInputStream()));
-        out = new PrintWriter(cc.getOutputStream());
-
-
+    ServerSocket server;
+    ArrayList<Socket> sockets;
+    // BufferedReader in;
+    // PrintWriter out;
+    public Servidor() throws IOException {
+        server = new ServerSocket(5000);
+        sockets = new ArrayList<>();
+        // in = new BufferedReader(new InputStreamReader(cc.getInputStream()));
+        // out = new PrintWriter(cc.getOutputStream());
     }
-    read(){
-        String line = in.readLine():
-        switch(line){
-            case"hola";
-            System.out.println("Me estas saludando")
-            out.println("hola tambien");
-            out.flush();
-            break;
-            case"adios";
-            System.out.println("jajaja")
-            out.println("adios igual");
-            out.flush();
-            break;
-            case"cual es mi calificacion";
-            System.out.println("nada mas para eso veniste")
-            out.println("0");
-            out.flush();
-            break;
+
+    public void start() throws IOException {
+        while(true) {
+            System.out.println("Escuchando un nuevo cliente");
+            Socket cc = server.accept();
+            sockets.add(cc);
+            new Atendedor(cc, sockets).start();
         }
-        in.closed();
-        out.closed();
     }
-    public static void main(String arg[]){
-        try{
-            Servidor s= new Servidor();
-        }catch(Excetion ex){
+
+    // public void read() throws IOException {
+    //     String line = "";
+    //     while(!line.equals("adios"))
+    //     {
+    //         line = in.readLine();
+    //         switch(line) {
+    //             case "hola":
+    //                 System.out.println("Me está saludando....");
+    //                 out.println("Hola tambien");
+    //                 out.flush();
+    //                 break;
+    //             case "adios":
+    //                 System.out.println("Ya te vas?");
+    //                 out.println("Adios igual");
+    //                 out.flush();
+    //                 break;
+    //             case "cual es mi calificacion?":
+    //                 System.out.println("Solo para eso veniste...:'(");
+    //                 out.println("0");
+    //                 out.flush();
+    //                 break;
+    //             default:
+    //                 System.out.println(line);
+    //         }
+    //     }
+    //     in.close();
+    //     out.close();
+    // }
+    public static void main(String args[]) {
+        try {
+            Servidor s = new Servidor();
+            s.start();
+            // s.read();
+        }catch(Exception ex){
             ex.printStackTrace();
         }
     }
