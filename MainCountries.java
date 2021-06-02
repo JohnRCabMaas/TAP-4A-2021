@@ -1,5 +1,5 @@
 import javax.swing.JFrame;
-import ejercicios2p.json.CountryUI;
+import Parcial_2.Json.CountryUI;
 
 public class MainCountries {
     public static void main(String args[]) {
