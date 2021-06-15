@@ -13,7 +13,7 @@ public class Main extends Frame {
         this.setSize(300,200);
         this.setVisible(true);
     }
-    public static void main(String arg []){
+    public static void main(String arg[]){
         Main window = new Main();
         window.addWindowListener(new WindowAdapter(){
             public void windowClosing(WindowEvent e){
