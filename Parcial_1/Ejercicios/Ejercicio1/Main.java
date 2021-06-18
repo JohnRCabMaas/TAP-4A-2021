@@ -10,8 +10,8 @@ public class Main extends Frame {
      */
     private static final long serialVersionUID = 1L;
     public Main(){
-        this.setSize(300,200);
-        this.setVisible(true);
+        this.setSize(200,200);
+        this.setVisible(false);
     }
     public static void main(String arg[]){
         Main window = new Main();
